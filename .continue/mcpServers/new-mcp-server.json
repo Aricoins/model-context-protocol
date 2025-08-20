@@ -1,0 +1,25 @@
+{
+  "models": [
+    {
+      "title": "DeepSeek Coder",
+      "provider": "ollama",
+      "model": "deepseek-coder:1.3b"
+    }
+  ],
+  "tabAutocompleteModel": {
+    "title": "DeepSeek Coder",
+    "provider": "ollama", 
+    "model": "deepseek-coder:1.3b"
+  },
+  "experimental": {
+    "MCP": {
+      "enabled": true,
+      "servers": {
+        "python-file-server": {
+          "command": "python",
+          "args": ["C:\\Users\\ariel\\MCP\\mcp.py"]
+        }
+      }
+    }
+  }
+}

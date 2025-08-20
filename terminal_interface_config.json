@@ -1,0 +1,36 @@
+ {
+  "terminal_title": "MCP Enhanced Terminal",
+  "prompt": ">>> ",
+  "cloud_model": {
+   "name": "deepseek-coder",
+   "api_key": "YOUR_API_KEY",
+   "endpoint": "https://api.deepseek.com/v1/coder"
+  },
+  "local_model": {
+   "name": "deepseek-coder:1.3b",
+   "type": "subprocess",
+   "command": "ollama run deepseek-coder:1.3b"
+  },
+  "mcp_server": {
+   "host": "localhost",
+   "port": 8888
+  },
+  "interface_mode": "hybrid",
+  "keybindings": {
+   "execute": "ctrl+enter",
+   "switch_model": "ctrl+m",
+   "clear_screen": "ctrl+l"
+  },
+  "display": {
+   "cloud_model_color": "blue",
+   "local_model_color": "green",
+   "mcp_server_color": "yellow",
+   "error_color": "red"
+  },
+  "features": [
+   "code_completion",
+   "syntax_highlighting",
+   "integrated_debugger",
+   "mcp_server_interaction"
+  ]
+ }
